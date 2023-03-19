@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <script src="https://kit.fontawesome.com/a6af7b92fb.js" crossorigin="anonymous"></script>
+	  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+	  <link rel="stylesheet" href="css/style.css">
+    <title>Todolist v1.0</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper home">
+        <header>
+          <a href="index.html" class="tl"><h3>Todolist</h3></a>
+          <span id="add-btn" class="fi fi-br-plus btn"></span>
+          <span id="nm-btn" class="fi fi-br-sun btn"></span>
+        </header>
+        <main>
+          <ul class="activity-list">
+            <!--Activity list-->
+          </ul>
+        </main>
+        <div class="overlay">
+          <div class="add-activity">
+            <h2>Tambah aktivitas</h2>
+            <form id="add-activity">
+              <input id="activity-input" type="text" placeholder="Nama aktivitas" autocomplete="off" required="required" maxlength="42">
+              <div class="btns">
+                <button class="cancel" type="reset">Batal</button>
+                <button type="submit">Buat</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper todos">
+        <header>
+          <span id="close-todos" class="fi fi-br-angle-left btn"></span>
+          <span class="tl">Minggu pagi</span>
+        </header>
+        <main>
+          <ul class="todo-list">
+            <!--Todo list-->
+          </ul>
+        </main>
+        <footer>
+          <form id="add-todo">
+      	    <input type="text" placeholder="Ketik sesuatu..." id="todo-input" required maxlength="50" autocomplete="off">
+      	    <button><i class="fi fi-br-pencil"></i></button>
+          </form>
+        </footer>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
