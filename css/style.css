@@ -57,6 +57,7 @@ header {
   padding: 5px;
   transition: .3s ease;
   border-radius: 50%;
+  cursor: pointer;
 }
 .btn:active {
   transform: scale(1.2,1.2);
@@ -86,6 +87,7 @@ li {
   gap: 10px;
   transition: .1s ease;
   z-index: 5;
+  cursor: pointer;
 }
 li:last-child {
   border: none;
